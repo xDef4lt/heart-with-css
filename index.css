@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.msg{
+    font-family: cream;
+    font-size: 100px;
+    width: 150px;
+}
+span{
+    color: #be2fbe;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 160px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+}
+@media (max-width: 500px){
+    body{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .msg{
+        margin-left: 110px;
+    }
+}
+
+.heart{
+    width: 100px;
+    height: 160px;
+    background: #be2fbe;
+    position: relative;
+    transform-origin: right bottom;
+    border-radius: 15px;
+    transition: 0.5s ease;
+    animation: heart 5s ease-in infinite alternate;
+}
+
+.heart:hover{
+    transition: 0.5s ease;
+    transform: rotate(45deg);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+.heart:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: #8f198f;
+    position: absolute;
+    transform-origin: left bottom;
+    animation: heart-after 5s ease-in infinite alternate;
+}
+
+@keyframes heart{
+    0%{
+        transform: rotate(0deg);
+    }
+    55%{
+        transform: rotate(45deg) scale(1);
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+    }
+    60%{
+    transform: rotate(45deg) scale(1.2);
+    }
+    65%{
+        transform: rotate(45deg) scale(1);
+    }
+    70%{
+        transform: rotate(45deg) scale(1.2);
+    }
+    75%{
+        transform: rotate(45deg) scale(1);
+    }
+    80%{
+        transform: rotate(45deg) scale(1.2);
+    }
+    85%{
+        transform: rotate(45deg) scale(1);
+    }
+    90%{
+        transform: rotate(45deg) scale(1.2);
+    }
+    95%{
+        transform: rotate(45deg) scale(1);
+    }
+    100%{
+       transform: rotate(45deg) scale(1.2);
+       border-top-left-radius: 60px;
+       border-top-right-radius: 60px;
+    }
+}
+
+@keyframes heart-after{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-90deg) translateY(100px);
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+    }
+    100%{
+        transform: rotate(-90deg) translateY(100px);
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+    }
+}
