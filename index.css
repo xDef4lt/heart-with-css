@@ -18,7 +18,7 @@ body{
     margin-right: 50px;
     width: 100px;
     height: 160px;
-    background: #be2fbe;
+    background: #7ce9fa;
     position: relative;
     transform-origin: right bottom;
     border-radius: 15px;
@@ -37,7 +37,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    background: #8f198f;
+    background: #27c8e0;
     position: absolute;
     transform-origin: left bottom;
     animation: heart-after 5s ease-in infinite alternate;
