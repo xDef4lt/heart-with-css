@@ -4,4 +4,4 @@
 <p> Este projeto foi feito como estudo de animações com CSS!</p>
 <p>Trata-se simplesmente de uma animação em loop em que é formado um coração batendo (doki doki)</p>
 <p>Se você gostou do projeto, considere dar uma estrelinha pra me deixar feliz :D</p>
-<p><b>Link:</b> love-xdef4lt.vercel.app</p>
+<p><b>Link:</b> <a href="love-xdef4lt.vercel.app">love-xdef4lt.vercel.app</a></p>
