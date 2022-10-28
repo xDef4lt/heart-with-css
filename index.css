@@ -4,34 +4,6 @@
     box-sizing: border-box;
 }
 
-.msg{
-    font-family: cream;
-    font-size: 100px;
-    width: 150px;
-    animation: 4s fadein;
-}
-
-@keyframes fadein{
-    0%{
-        opacity: 0;
-    }
-    25%{
-        opacity: 0.2;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    75%{
-        opacity: 0.7;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-span{
-    color: #be2fbe;
-}
-
 body{
     height: 100vh;
     display: flex;
@@ -40,16 +12,6 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #000;
-    color: #fff;
-}
-@media (max-width: 500px){
-    body{
-        flex-direction: column;
-        gap: 5px;
-    }
-    .msg{
-        margin-left: 110px;
-    }
 }
 
 .heart{
@@ -94,12 +56,6 @@ body{
     transform: rotate(45deg) scale(1.2);
     }
     65%{
-        transform: rotate(45deg) scale(1);
-    }
-    70%{
-        transform: rotate(45deg) scale(1.2);
-    }
-    75%{
         transform: rotate(45deg) scale(1);
     }
     80%{
